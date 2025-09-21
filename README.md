@@ -13,3 +13,8 @@ This project contains all the necessary files used for the thesis outcome
 - Charts use evidence_matrix.csv only. Assumptions are discussed in text, some plotted here.
 - Full assumptions graphs can be plotted(in case) using assumption_matrix.csv
 - Keep matrices separate and label assumptions clearly.
+
+
+##Note: The Plotting file is used to plot figures using the values of evidence matrix. Anyone can use this file to create
+figures based on there tempelate to have a visual representation of there use case. Similarly assumption plots can be done through python notebook as well
+I have uploaded samples of assumptions using assumption dataset. 
