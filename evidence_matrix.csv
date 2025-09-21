@@ -1,0 +1,13 @@
+system,sector,pipeline,latency,compliance_noted,architecture,tool_stack,deployment,scalability
+PEACH (Perioperative AI Chatbot),Healthcare,Unclear,Unclear,“Secure” LLM environment; institutional protocols,Unclear,Claude 3.5 (Pair Chat framework); peri-operative protocols,Cloud,Unclear
+Premera “Scout” (Azure Health Bot),Healthcare,Unclear,Unclear,HIPAA-aligned on Azure (privacy compliance claimed; mechanisms not enumerated),Unclear,Azure Health Bot; Cognitive Services,Cloud,Unclear
+NHS Digital Access Point (Sensely),Healthcare,Unclear,Unclear,NHS data-protection governance implied; mechanisms not itemised,Unclear,Sensely platform,Unclear,Unclear
+Nuance DAX Copilot embedded in Epic,Healthcare,Unclear,Unclear,Azure OpenAI + Epic workflow integration (“secure”); mechanisms not enumerated,Unclear,Nuance DAX Copilot; Azure OpenAI; Epic,Unclear,Unclear
+Microsoft Healthcare Bot + Infermedica,Healthcare,Unclear,Unclear,HIPAA-aligned Azure service (mechanisms not enumerated),Unclear,Azure Healthcare Bot; Infermedica APIs,Cloud,Unclear
+Cleveland Clinic ambient AI scribe (Ambience),Healthcare,Unclear,Unclear,Hospital/EHR governance (no mechanism list),Unclear,Ambience Healthcare platform; EHR integration,Unclear,Unclear
+Amazon Finance Automation Q&A (Bedrock),Finance,Unclear,Unclear,Enterprise controls/guardrails; logging (per AWS materials),Unclear,Amazon Bedrock (RAG); Kendra/OpenSearch; embeddings,Cloud,Unclear
+JPMorgan COiN (Contract Intelligence),Finance,Batch,Batch/Delayed,Compliance emphasis (access/audit reported in press),Unclear,Internal document-processing stack,Unclear,Unclear
+Morgan Stanley – Assistant & Debrief,Finance,Unclear,Unclear,Client consent; internal-content-only; guardrails (press),Unclear,GPT-4 based Assistant; Debrief meeting summarization,Unclear,Unclear
+HSBC internal policy chatbot (GCP/Dialogflow),Finance,Unclear,Unclear,Enterprise controls on Google Cloud (no mechanism list),Unclear,Dialogflow; Google Cloud AI,Cloud,Unclear
+ING generative assistant (ING–McKinsey),Finance,Unclear,Unclear,Risk-coded guardrails (case study),Unclear,Multi-step retrieval + ranking pipeline,Unclear,Unclear
+NatWest Cora / Cora+ (IBM watsonx; OpenAI),Finance,Unclear,Unclear,Bank-grade governance; OpenAI collaboration (press),Unclear,IBM watsonx (Cora+); OpenAI collaboration,Cloud (implied),Unclear

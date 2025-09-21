@@ -1,0 +1,13 @@
+system,sector,pipeline,latency,compliance_noted,architecture,tool_stack,deployment,scalability
+PEACH (Perioperative AI Chatbot),Healthcare,Streaming,Near real-time,“Secure” LLM environment; institutional protocols (no mechanism list),Microservices (federated access),Claude 3.5 (Pair Chat framework); peri-operative protocols,Hybrid (cloud chat + on-prem EHR),High
+Premera “Scout” (Azure Health Bot),Healthcare,Hybrid (events + nightly sync),Near real-time,HIPAA-aligned on Azure (privacy compliance claimed; mechanisms not enumerated),Microservices,Azure Health Bot; Cognitive Services,Cloud/Hybrid,High
+NHS Digital Access Point (Sensely),Healthcare,Hybrid,Near real-time,Data protection governance (NHS case + separate DPIA for Ask NHS; mechanisms not itemized here),Microservices,Sensely platform,Hybrid,High
+Nuance DAX Copilot embedded in Epic,Healthcare,Streaming,Real-time,“Secure” Azure OpenAI + Epic workflow integration (mechanisms not enumerated),Microservices,Nuance DAX Copilot; Azure OpenAI; Epic,Hybrid,High
+Microsoft Healthcare Bot + Infermedica,Healthcare,Hybrid,Near real-time,HIPAA-aligned Azure service (mechanisms not enumerated),Microservices,Azure Healthcare Bot; Infermedica APIs,Cloud/Hybrid,High
+Cleveland Clinic ambient AI scribe (Ambience),Healthcare,Streaming,Real-time,Hospital/EHR governance (no mechanism list),Microservices,Ambience Healthcare platform; EHR integration,Hybrid,High
+Amazon Finance Automation Q&A (Bedrock),Finance,Hybrid (RAG + periodic index refresh),Near real-time,"Enterprise controls/guardrails, logging (as described by AWS)",Microservices,Amazon Bedrock (RAG); Kendra/OpenSearch; embeddings,Cloud/Hybrid,High
+JPMorgan COiN (Contract Intelligence),Finance,Batch,Batch/Delayed,Compliance emphasis (access/audit reported); mechanisms not itemized in source,Microservices (modernised),Internal document-processing stack,On-prem/Hybrid,Moderate
+Morgan Stanley – Assistant & Debrief,Finance,Hybrid (retrieval + periodic updates),Near real-time,Client consent (Debrief)internal-content-only(controls/guardrails),Microservices,GPT-4 based Assistant; Debrief meeting summarization,Cloud/Hybrid,High
+HSBC internal policy chatbot (GCP/Dialogflow),Finance,Hybrid (retrieval + refresh),Near real-time,Enterprise controls on Google Cloud (no mechanism list),Microservices,Dialogflow; Google Cloud AI,Cloud/Hybrid,High
+ING generative assistant (ING–McKinsey),Finance,Hybrid/Streaming,Near real-time,Risk-coded guardrails (stated),Microservices,Multi-step retrieval + ranking pipeline,Cloud/Hybrid,High
+NatWest Cora / Cora+ (IBM watsonx; OpenAI),Finance,Hybrid,Near real-time,Bank-grade governance OpenAI collaboration (no mechanism list),Microservices,IBM watsonx (Cora+); OpenAI collaboration,Cloud/Hybrid,High
