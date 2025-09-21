@@ -15,7 +15,7 @@ This project contains all the necessary files used for the thesis outcome
 - Keep matrices separate and label assumptions clearly.
 
 
-##Note: 
+## Note: 
 The Plotting python notebook is used to plot figures using the values of evidence matrix. Anyone can use this file to create
 figures based on there tempelate to have a visual representation of there use case. Similarly assumption plots can be done through python notebook as well
 I have uploaded samples of assumptions using assumption dataset. 
