@@ -1,0 +1,22 @@
+system,pipeline_assumed,latency_assumed,compliance_assumed,architecture_assumed,tool_stack_assumed,deployment_assumed,scalability_assumed,assumption_ids,rationale_summary
+PEACH (Perioperative AI Chatbot),Streaming,Near real-time,Encryption + RBAC + Audit logging,Microservices (federated access),Event bus + FHIR/HL7 API gateway,Hybrid (cloud chat + on-prem EHR),High,A1|A3|A4|A5,Peri-operative fresh data; FHIR-secured; hybrid.
+Premera “Scout” (Azure Health Bot),Hybrid (events + nightly sync),Near real-time,Encryption + RBAC + Audit logging,Microservices,Azure Health Bot + FHIR connectors,Cloud/Hybrid,High,A1|A2|A5,HIPAA/FHIR baseline; cloud bot + sync.
+NHS Digital Access Point (Sensely),Hybrid,Near real-time,Encryption + RBAC + Audit logging,Microservices,Sensely APIs + FHIR/HL7,Hybrid,High,A1|A5,NHS + FHIR implies secure connections.
+Nuance DAX Copilot embedded in Epic,Streaming,Real-time,Encryption + RBAC + Audit logging,Microservices,Audio capture services + FHIR,Hybrid,High,A1|A3|A4|A5,Ambient capture →streaming boundary; hybrid.
+Microsoft Healthcare Bot + Infermedica,Hybrid,Near real-time,Encryption + RBAC + Audit logging,Microservices,Azure Bot + triage APIs,Cloud/Hybrid,High,A1|A2|A5,HIPAA/FHIR baseline; microservices.
+Cleveland Clinic ambient AI scribe (Ambience),Streaming,Real-time,Encryption + RBAC + Audit logging,Microservices,Ambient capture + FHIR,Hybrid,High,A1|A3|A4|A5,Live transcription →streaming boundary.
+Amazon Finance Automation Q&A (Bedrock),Hybrid (RAG + periodic index refresh),Near real-time,Encryption + RBAC + Audit logging,Microservices,Event streaming/queue + vector index,Cloud/Hybrid,High,A6|A5,"Finance: encryption, strict access, event-driven."
+JPMorgan COiN (Contract Intelligence),Batch,Batch/delayed,Encryption + RBAC + Audit logging,Microservices (modernised),Document ETL + OCR + NLP services,On-prem/Hybrid,Moderate,A6|A5,Legal docs →strong controls; legacy modernisation.
+Morgan Stanley – Assistant & Debrief,Hybrid (retrieval + periodic updates),Near real-time,Encryption + RBAC + Audit logging,Microservices,Retrieval + ranking + event bus,Cloud/Hybrid,High,A6|A5,Secure retrieval; event-driven.
+HSBC internal policy chatbot (GCP/Dialogflow),Hybrid (retrieval + refresh),Near real-time,Encryption + RBAC + Audit logging,Microservices,Dialogflow + policy DB,Cloud/Hybrid,High,A6|A5,Encrypted access; audit; microservices.
+ING generative assistant (ING–McKinsey),Hybrid/Streaming,Near real-time,Encryption + RBAC + Audit logging,Microservices,Retrieval + ranking + risk policies,Cloud/Hybrid,High,A6|A5,Guardrailed multi-step retrieval.
+NatWest Cora / Cora+ (IBM watsonx; OpenAI),Hybrid,Near real-time,Encryption + RBAC + Audit logging,Microservices,watsonx/OpenAI + banking APIs + event bus,Cloud/Hybrid,High,A6|A5,Bank governance; event-driven assistants.
+,,,,,,,,,
+,,,,,,,,,
+assumption_id,sector_rule,guideline_source_to_cite,,,,,,,
+A1,"FHIR Security & Privacy baseline: TLS, auth, access control, audit.",HL7 FHIR Security & Privacy guidance.,,,,,,,
+A2,"HIPAA/GDPR baseline for PHI/PII: encryption at rest/in transit, least privilege, audit.",HIPAA Security Rule (HHS); GDPR Art. 32.,,,,,,,
+A3,Live clinical contexts require event/stream boundaries for freshness.,Event-driven clinical integration patterns.,,,,,,,
+A4,Hybrid deployment when cloud AI integrates with on-prem EHR/core.,Hybrid patterns for regulated systems.,,,,,,,
+A5,"Microservices for isolation, scaling, and per-service access boundaries.",Zero-trust/service identity patterns.,,,,,,,
+A6,"Finance AI: end-to-end encryption, strict access, immutable audit; event-driven with some batch.",Financial-services AI/security guidance.,,,,,,,
